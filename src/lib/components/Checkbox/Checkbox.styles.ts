@@ -1,7 +1,10 @@
-import styled, { FlattenSimpleInterpolation, css } from "styled-components";
-import type { Sizes } from "../interfaces/Sizes";
+import styled, {
+  Interpolation as FlattenSimpleInterpolation,
+  css,
+} from "styled-components";
+import { Sizes } from "../../shared/interfaces";
 
-const sizes: Record<Sizes, FlattenSimpleInterpolation> = {
+const sizes: Record<Sizes, FlattenSimpleInterpolation<any>> = {
   lg: css`
     width: 1.5rem;
     height: 1.5rem;

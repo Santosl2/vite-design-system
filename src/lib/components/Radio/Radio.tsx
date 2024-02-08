@@ -1,5 +1,5 @@
-import * as S from './Radio.styles';
-import type { RadioProps, RadioWithControllerProps } from './Radio.types';
+import * as S from "./Radio.styles";
+import type { RadioProps, RadioWithControllerProps } from "./Radio.types";
 
 export function RadioWithController({
   controller,
@@ -29,7 +29,7 @@ export function Radio({
   onCheck,
   value,
   defaultChecked = false,
-  size = 'md',
+  size = "md",
   id,
 }: RadioProps) {
   return (

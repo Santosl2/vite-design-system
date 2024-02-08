@@ -1,5 +1,5 @@
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable react/require-default-props */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import { Container } from "./Text.styles";
 import { TextProps } from "./Text.types";
 

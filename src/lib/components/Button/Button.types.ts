@@ -15,6 +15,6 @@ export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> &
     radius?: "small" | "medium" | "full";
   };
 
-export type Variant = keyof typeof buttonVariants;
+type Variant = keyof typeof buttonVariants;
 
-export type Size = keyof typeof buttonSizes;
+type Size = keyof typeof buttonSizes;

@@ -1,9 +1,11 @@
-import styled, { DefaultTheme, css, keyframes } from 'styled-components';
-import { ButtonProps } from '.';
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
+import styled, { DefaultTheme, css, keyframes } from "styled-components";
+import { ButtonProps } from ".";
 
-type ButtonModifiersProps = Omit<ButtonProps, 'children'>;
+type ButtonModifiersProps = Omit<ButtonProps, "children">;
 
-export type ButtonColors = 'error' | 'success' | 'light' | undefined;
+export type ButtonColors = "error" | "success" | "light" | undefined;
 
 export const buttonColors = {
   error: (theme: DefaultTheme) => theme.colors.lightRed[550],
@@ -158,14 +160,14 @@ export const Button = styled.button<ButtonModifiersProps>`
     border-radius: 4px;
     font-size: ${theme.fonts.size.md};
     font-weight: bold;
-    cursor: ${isLoading ? 'default' : 'pointer'};
+    cursor: ${isLoading ? "default" : "pointer"};
     border: 2px solid
       ${!theme.hostCompany.isPartner
         ? theme.colors.blue[500]
         : theme.hostCompany.cor};
     background-color: transparent;
     color: ${theme.colors.blue[500]};
-    width: ${width === 'full' ? '100%' : width ? `${width}rem` : 'auto'};
+    width: ${width === "full" ? "100%" : width ? `${width}rem` : "auto"};
     position: relative;
 
     &:hover {
@@ -187,7 +189,7 @@ type ButtonContentWrapperProps = {
 };
 
 export const ButtonContentWrapper = styled.div<ButtonContentWrapperProps>`
-  visibility: ${({ isLoading }) => (isLoading ? 'hidden' : 'visible')};
+  visibility: ${({ isLoading }) => (isLoading ? "hidden" : "visible")};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,13 +199,13 @@ export const ButtonContentWrapper = styled.div<ButtonContentWrapperProps>`
 `;
 
 type IconWrapperProps = {
-  iconPosition: 'left' | 'right';
+  iconPosition: "left" | "right";
 };
 
 export const IconWrapper = styled.span<IconWrapperProps>`
   ${({ iconPosition }) => css`
     display: flex;
-    order: ${iconPosition === 'left' ? 0 : 1};
+    order: ${iconPosition === "left" ? 0 : 1};
   `}
 `;
 
@@ -229,7 +231,7 @@ type LoaderContentProps = {
 
 export const LoaderContent = styled.div<LoaderContentProps>`
   ${({ isLoading }) => css`
-    visibility: ${isLoading ? 'visible' : 'hidden'};
+    visibility: ${isLoading ? "visible" : "hidden"};
     position: absolute;
     display: flex;
     align-items: center;

@@ -279,8 +279,8 @@ export const colors = {
 };
 
 export function getColors(color: object) {
-  const colors = Object.entries(color)
-    .map(([key, value]) => {
+  const colors: unknown = Object.entries(color)
+    .map(([, value]) => {
       if (typeof value === "object") {
         return getColors(value);
       }
@@ -288,5 +288,6 @@ export function getColors(color: object) {
       return value;
     })
     .flat();
+
   return colors;
 }

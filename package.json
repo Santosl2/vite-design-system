@@ -1,7 +1,7 @@
 {
   "name": "@santosl2/design-system",
   "private": false,
-  "version": "0.0.15",
+  "version": "1.0.0",
   "type": "module",
   "main": "./dist/design-system.umd.cjs",
   "module": "./dist/design-system.es.js",

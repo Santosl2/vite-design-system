@@ -1,10 +1,10 @@
-import styled, { DefaultTheme, css } from 'styled-components';
+import styled, { DefaultTheme, css } from "styled-components";
 
 type InputWrapperProps = {
   isFocused: boolean;
   isFilled: boolean;
   hasError: boolean;
-  background: 'primary';
+  background: "primary";
   hasIcon: boolean;
 };
 
@@ -13,13 +13,7 @@ type ShowPasswordButtonProps = {
 };
 
 const wrapperModifiers = {
-  primary: (
-    theme: DefaultTheme,
-    isFocused: boolean,
-    hasError: boolean,
-    isFilled: boolean,
-    hasIcon: boolean
-  ) => css`
+  primary: (theme: DefaultTheme, hasError: boolean, hasIcon: boolean) => css`
     height: auto;
     position: relative;
     background-color: ${theme.colors.white};
@@ -40,7 +34,7 @@ const wrapperModifiers = {
     }
     input {
       display: block;
-      padding: ${hasIcon ? '10px 0 10px 35px' : '10px 16px'};
+      padding: ${hasIcon ? "10px 0 10px 35px" : "10px 16px"};
       border: 1px solid ${theme.colors.silver[100]};
       border-radius: 4px;
       background-color: ${theme.colors.white};
@@ -69,7 +63,7 @@ const wrapperModifiers = {
 };
 
 export const Wrapper = styled.div<InputWrapperProps>`
-  ${({ theme, isFocused, background, hasError, isFilled, hasIcon }) => css`
+  ${({ theme, background, hasError, hasIcon }) => css`
     width: 100%;
     max-width: 400px;
     position: relative;
@@ -93,13 +87,7 @@ export const Wrapper = styled.div<InputWrapperProps>`
       -webkit-text-fill-color: #333;
     }
 
-    ${wrapperModifiers[background](
-      theme,
-      isFocused,
-      hasError,
-      isFilled,
-      hasIcon
-    )}
+    ${wrapperModifiers[background](theme, hasError, hasIcon)}
 
     @media (max-width: 500px) {
       input {
@@ -143,7 +131,7 @@ export const ShowPasswordButton = styled.button<ShowPasswordButtonProps>`
     height: 34px;
     width: 34px;
     position: absolute;
-    right: ${hasError ? '32px' : '5px'};
+    right: ${hasError ? "32px" : "5px"};
     top: calc(50% - 17px);
     background-color: transparent;
     display: grid;

@@ -1,6 +1,6 @@
-import type { FormEvent, ReactNode } from 'react';
-import type { UseFormRegisterReturn } from 'react-hook-form';
-import type { Sizes } from '../interfaces/Sizes';
+import type { FormEvent, ReactNode } from "react";
+import type { UseFormRegisterReturn } from "react-hook-form";
+import type { Sizes } from "../../shared/interfaces";
 
 type OptionProps = {
   name: string;

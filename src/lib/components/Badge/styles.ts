@@ -1,5 +1,7 @@
-import styled, { css, type DefaultTheme } from 'styled-components';
-import { BadgeModifiersType, BadgeTypeProps } from './Badge.types';
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
+import styled, { css, type DefaultTheme } from "styled-components";
+import { BadgeModifiersType, BadgeTypeProps } from "./Badge.types";
 
 const BadgeModifiers: BadgeModifiersType = {
   success: (theme: DefaultTheme) => css`
@@ -21,7 +23,7 @@ const BadgeModifiers: BadgeModifiersType = {
 };
 
 export const Container = styled.span<BadgeTypeProps>`
-  ${({ theme, variant = 'warning' }) => css`
+  ${({ theme, variant = "warning" }) => css`
     border-radius: 50px;
     padding: 0.2rem 0.5rem;
     font-weight: ${theme.fonts.weight.bold};

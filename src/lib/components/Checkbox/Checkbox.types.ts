@@ -1,6 +1,6 @@
-import { InputHTMLAttributes, ReactNode } from 'react';
-import { UseFormRegisterReturn } from 'react-hook-form';
-import type { Sizes } from '../interfaces/Sizes';
+import { InputHTMLAttributes, ReactNode } from "react";
+import { UseFormRegisterReturn } from "react-hook-form";
+import type { Sizes } from "../../shared/interfaces";
 
 export type CheckboxProps = {
   name: string;
