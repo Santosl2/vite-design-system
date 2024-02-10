@@ -8,16 +8,15 @@ on:
 jobs:
   patch:
     runs-on: ubuntu-latest
-  
-  steps
-    - name: Checkout
-      uses: actions/checkout@v4
-    
-    - name: Increase package.json version
-      run: npm version patch --no-git-tag-version
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Commit changes
-      run: | 
+      - name: Increase package.json version
+        run: npm version patch --no-git-tag-version
+
+      - name: Commit changes
+        run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add ./
