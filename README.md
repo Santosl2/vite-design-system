@@ -7,7 +7,7 @@ This project is a small design system project aimed at improving my knowledge of
 Clone this project
 
 ```bash
-  git clone https://link-para-o-projeto
+  git clone git@github.com:Santosl2/vite-design-system.git
 ```
 
 Enter in repository project folder
