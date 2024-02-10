@@ -5,8 +5,8 @@ import { DEFAULT_THEME } from "./lib/theme/default-theme";
 function App() {
   return (
     <WhitelabelProvider whitelabelTheme={DEFAULT_THEME}>
-      <Button>fdsfsd</Button>
-      <Input name="name" />
+      <Button>Hello world</Button>
+      <Input name="name" placeholder="E-mail" />
     </WhitelabelProvider>
   );
 }
