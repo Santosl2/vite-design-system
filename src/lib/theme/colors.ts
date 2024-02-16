@@ -1,4 +1,37 @@
 export const colors = {
+  error: {
+    50: "#fbe8ea",
+    100: "#f2b9bf",
+    300: "#e46774",
+    500: "#d61c30",
+    700: "#981422",
+    900: "#5a0c14",
+  },
+  attention: {
+    50: "#fff6e6",
+    100: "#ffe3b2",
+    300: "#ffc258",
+    500: "#ffa406",
+    700: "#b57404",
+    900: "#6b4503",
+  },
+  primary: {
+    50: "#E6EFFF",
+    300: "#5894FF",
+    700: "#0444B5",
+  },
+
+  success: {
+    50: "#E3FCEF",
+    100: "#B2E4DF",
+    300: "#5AC5BA",
+    500: "#08A898",
+    700: "#06776C",
+    900: "#034740",
+    primary: "#08A898",
+    secondary: "#17FF12",
+  },
+
   white: "#fff",
   black: "#000000",
   red: "#ff0000",
@@ -195,6 +228,9 @@ export const colors = {
     300: "rgba(0, 0, 0, 0.3)",
   },
   neutral: {
+    primary: "#7C7C7C",
+    secondary: "#4F575E",
+
     whiteone: "#FFF",
     whitetwo: "#FAFAFA",
     whitethree: "#F3F3F3",
